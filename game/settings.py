@@ -90,7 +90,7 @@ ALLOWED_HOSTS = ['*', '.now.sh', '.vercel.app', '127.0.0.1', 'localhost']
 '''
 #postgres database
 #python manage.py migrate --run-syncdb
-DATABASES = {
+'''DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": "gamedb",  #nome da db
@@ -100,7 +100,7 @@ DATABASES = {
         "PORT": "5432",
         
     }
-}
+}'''
 
 #aws_postgres
 '''DATABASES = {
@@ -114,6 +114,19 @@ DATABASES = {
         
     }
 }'''
+
+#vercel db
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "verceldb",  #nome da db
+        "USER": "default",
+        "PASSWORD": "ESs1BtQ6VpgT",
+        "HOST": "ep-weathered-dawn-845543-pooler.us-east-1.postgres.vercel-storage.com",
+        "PORT": "5432",
+        
+    }
+}
 
 AUTH_USER_MODEL = 'my_app.User'
 
