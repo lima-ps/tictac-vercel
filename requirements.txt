@@ -44,7 +44,6 @@ pycparser==2.21
 Pygments==2.14.0
 pyOpenSSL==23.0.0
 python-dateutil==2.8.2
-pywin32==305
 pyzmq==25.0.0
 s3transfer==0.6.1
 service-identity==21.1.0
